@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заповніть матрицю СЛАР"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/editTextX11"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X1 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextX12"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:background="@drawable/my_border"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X2 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextX13"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X3 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTexta"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+        <TextView
+            android:id="@+id/textViewX14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X4 = "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+        <EditText
+            android:id="@+id/editTextFinal1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/editTextX31"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X1 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextX32"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X2 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextX33"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X3 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+        <EditText
+            android:id="@+id/editTextc"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+        <TextView
+            android:id="@+id/textViewX34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X4 = "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+        <EditText
+            android:id="@+id/editTextFinal3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/editTextX21"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X1 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextX22"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X2 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextX23"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X3 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextb"
+            android:layout_width="48dp"
+            android:layout_height="27dp"
+            android:background="@drawable/my_border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+        <TextView
+            android:id="@+id/textViewX24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X4 = "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+        <EditText
+            android:id="@+id/editTextFinal2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <EditText
+            android:id="@+id/editTextX41"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X1 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextX42"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:background="@drawable/my_border"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X2 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextX43"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+        <TextView
+            android:id="@+id/textViewX43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X3 +"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+        <EditText
+            android:id="@+id/editTextd"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+        <TextView
+            android:id="@+id/textViewX44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X4 = "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+        <EditText
+            android:id="@+id/editTextFinal4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="211dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:text="Результат"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/resultX"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/result"
+        app:layout_constraintTop_toTopOf="@+id/result"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="203dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#9C27B0"
+        android:text="РОЗРАХУВАТИ"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="203dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="variant"
+        android:text="Ввести значення за варіантом"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
